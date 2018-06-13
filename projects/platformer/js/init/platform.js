@@ -1,10 +1,10 @@
-(function (window) {
+(function(window) {
     'use strict';
     window.opspark = window.opspark || {};
     window.opspark.platform = window.opspark.platform || {};
-    
+
     let platform = window.opspark.platform;
-    
+
     /**
      * init: This function initializes the platforms for the level.
      * 
@@ -22,11 +22,11 @@
      *              stretch the platform in width.
      *      scaleY: OPTIONAL The scale factor on the y-axis, this value will 
      *              stretch the platform in height.
-     */ 
-    platform.init = function (game) {
+     */
+    platform.init = function(game) {
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-        
+
         /*
          * ground : here, we create a floor. Given the width of of the platform 
          * asset, giving it a scaleX and scaleY of 2 will stretch it across the 
@@ -35,12 +35,12 @@
         platform.create(0, game.world.height - 32, 3, 2);
 
         // example:
-        platform.create(400, 460);
-        platform.create(500, 200);
-        platform.create(600, 100);
-        platform.create(700, 300);
-        platform.create(850, 200);
-        
+        platform.create(600, 300);
+        platform.create(500, 400);
+        platform.create(400, 500);
+        platform.create(300, 600);
+        platform.create(200, 700);
+
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
